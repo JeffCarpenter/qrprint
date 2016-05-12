@@ -1,4 +1,5 @@
-1. Download rmon, extract it (to something like "c:\rmon") and run setup.exe for 32 bit Windows or setup64.exe for 64 bit
+1. Download RedMon (http://pages.cs.wisc.edu/~ghost/redmon),
+	extract it (to something like "c:\redmon") and run setup.exe for 32 bit Windows or setup64.exe for 64 bit
 2. Open "Devices and Printers" (in Start Menu)
 3. Create a "Redirected Port" (in the "Add Printer" screen)
 4. Add a local printer using the redirected port (probably called RPT1).
