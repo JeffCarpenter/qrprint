@@ -4,7 +4,7 @@ import pyqrcode
 import os
 
 SCALE = 6
-OUT_FILE = r"D:\qr.png"
+OUT_FILE = r"qr.png"
 
 
 def windows_photo_viewer(filename):
