@@ -14,13 +14,13 @@ def windows_photo_viewer(filename):
     subprocess.call(WINDOWS_PHOTO_VIEWER_PATH + [filename]) 
 
 
-def qr(filename, text=None):
+def render_qr(filename, text=None):
     code = pyqrcode.create(text)
     with open(filename, "wb") as fstream:
 	    code.png(fstream, scale=SCALE)
 
 
-def render(filename):
+def display_picture(filename):
     try:
         # for most cases
         windows_photo_viewer(filename)
@@ -33,8 +33,8 @@ def render(filename):
 
 def main():
     text = sys.stdin.read()
-    qr(OUT_FILE, text=text)
-    render(OUT_FILE)
+    render_qr(OUT_FILE, text=text)
+    display_picture(OUT_FILE)
 
 if __name__ == "__main__":
     main()
